@@ -13,7 +13,7 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.aduc-art.pt
+        server:  94.126.169.39
         username: upload@aduc-art.pt
         password: ${{secrets.FTP_PASSWORD}}
         server-dir: public_html/
