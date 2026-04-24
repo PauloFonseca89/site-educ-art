@@ -1,10 +1,8 @@
 name: Deploy Automático para Dominios.pt
-
 on:
   push:
     branches:
       - main
-
 jobs:
   web-deploy:
     name: Deploy
@@ -12,12 +10,11 @@ jobs:
     steps:
     - name: Get latest code
       uses: actions/checkout@v3
-
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.aduc-art.pt
         username: upload@aduc-art.pt
-        password: ${{ secrets.FTP_PASSWORD }}
+        password: ${{secrets.FTP_PASSWORD}}
         server-dir: public_html/
         protocol: ftp
