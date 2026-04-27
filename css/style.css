@@ -43,7 +43,7 @@ body {
 .navbar nav {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 6%;
+  padding: 0 3%;
 
   display: flex;
   align-items: center;
@@ -53,7 +53,9 @@ body {
 
 /* LOGO */
 nav img {
-  height: 60px;
+  width: 172px;
+  height: auto;
+  display: block;
 }
 
 /* MENU */
